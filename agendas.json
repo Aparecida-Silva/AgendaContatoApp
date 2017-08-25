@@ -1,0 +1,22 @@
+[  
+   {  
+      "proprietario":"Rennan",
+      [  
+         {  
+            "criacao":"sdfds",
+            {  
+               "nome":"Homer",
+               "nascimento":"12/12/1212",
+               "email":"homer@google.com"
+            },
+            [  
+               {  
+                  "numero":"33333333",
+                  "ddd":"83",
+                  "codigoPais":"33"
+               }
+            ]
+         }
+      ]
+   }
+]
