@@ -18,4 +18,10 @@ class Agenda:
         pass
 
     def salvarEmJson(self):
-        print(json.dumps(self.contatos[0].__dict__))
+        f = None
+        try:
+            f = open(self.contatos[0].pessoa["nome"] + ".json")
+        except:
+            f = open(self.contatos[0].pessoa["nome"] + ".json", "w")
+        f.write(json.dumps(self.contatos[0].__dict__))
+        f.close()
