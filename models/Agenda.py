@@ -6,16 +6,22 @@ class Agenda:
         self.contatos = []
 
     def contarContatos(self):
-        pass
+        return len(self.contatos)
 
     def listarContatos(self):
-        pass
+        for contato in self.contatos:
+            print(contato)
 
     def incluirContato(self, contato):
-        pass
+        self.contatos.append(contato)
+
+    def buscarContato(self, nome):
+        for contato in self.contatos:
+            if(contato.pessoa.nome.lower() == nome.lower()):
+                return contato
 
     def excluirContato(self, nome):
-        pass
+        self.contatos.remove(self.buscarContato(nome))
 
     def salvarEmJson(self):
         f = None
